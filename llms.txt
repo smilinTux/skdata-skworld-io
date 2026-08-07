@@ -1,0 +1,24 @@
+# SKData
+
+> Sovereign data management — local-first, encrypted at rest, pluggable backends. Your data. Your infrastructure. Your rules.
+
+SKData is the data sovereignty layer of the SKWorld ecosystem. It gives you
+local-first, encrypted-at-rest data management with pluggable backends — no
+cloud dependency, no vendor lock-in. Researchers and AI engineers building
+sovereign pipelines will find production-ready data infrastructure that stays
+entirely under their control.
+
+## Links
+
+- [Live site](https://skdata.skworld.io)
+- [GitHub repo](https://github.com/smilinTux/skdata-io)
+- [Contact](mailto:hello@skdata.skworld.io)
+
+## About smilinTux
+
+SKData is part of the **smilinTux sovereign AI ecosystem** — a suite of
+open-source tools built by King Divad and Lumina to give humans and AI agents
+genuine, authentic infrastructure they can own and trust. No corporate robotics.
+No black-box clouds. GPL-3.0 forever.
+
+Other ecosystem projects: [SKWorld](https://skworld.io) · [SKMemory](https://skmemory.io) · [SKSecurity](https://sksecurity.io) · [CapAuth](https://capauth.io) · [SKComm](https://skcomm.io) · [SKGraph](https://skgraph.io) · [SKVector](https://skvector.io)
