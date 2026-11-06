@@ -193,6 +193,59 @@
         color: #34d399;
       }
 
+      /* ── Architecture ────────────────────────── */
+      .arch-section {
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+      .arch-section h2 {
+        text-align: center;
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #fafafa;
+      }
+      .arch-section .arch-intro {
+        text-align: center;
+        color: #a1a1aa;
+        font-size: 0.95rem;
+        max-width: 40rem;
+        margin: 0 auto 1.5rem;
+      }
+      .arch-figure {
+        border: 1px solid #27272a;
+        border-radius: 0.5rem;
+        background: rgba(24,24,27,0.5);
+        padding: 1.25rem 1.5rem;
+      }
+      .arch-figure figcaption {
+        font-size: 0.9rem;
+        color: #a1a1aa;
+        text-align: center;
+      }
+      .arch-figure figcaption a {
+        color: #34d399;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .arch-figure figcaption a:hover {
+        text-decoration: underline;
+      }
+      .arch-pill {
+        display: inline-block;
+        font-size: 0.72rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        padding: 0.22rem 0.65rem;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+        color: #34d399;
+        background: rgba(52,211,153,0.1);
+        border: 1px solid rgba(52,211,153,0.35);
+      }
+
       /* ── Install ─────────────────────────────── */
       .install-section {
         max-width: 40rem;
@@ -465,6 +518,7 @@
         <a href="https://skdata.skworld.io" class="nav-logo">SK<span style="color:#34d399">Data</span></a>
         <div class="nav-links">
             <a href="https://skworld.io" class="nav-link">SKWorld</a>
+            <a href="#architecture" class="nav-link">Architecture</a>
             <a href="https://skarchitect.io" class="nav-link">SKArchitect</a>
             <a href="https://github.com/smilinTux/skdata" class="nav-link" target="_blank" rel="noopener">GitHub</a>
         </div>
@@ -517,6 +571,17 @@
               <h3>Zero Cloud Dependency</h3>
             </div>
       </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="arch-section" id="architecture">
+      <h2>Architecture</h2>
+      <p class="arch-intro">An agent or app reads and writes through SKData's core into an encrypted local store, with pluggable backends for where that store actually lives. No required cloud hop.</p>
+      <figure class="arch-figure">
+        <figcaption>
+          <span class="arch-pill">Interactive</span>Component map, local-first and encrypted at rest. <a href="diagrams/skdata.architecture.html" target="_blank" rel="noopener">Open the interactive version &#x2197;</a>
+        </figcaption>
+      </figure>
     </section>
 
       <section class="install-section">
