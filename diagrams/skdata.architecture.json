@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "SKData Component Map",
+    "subtitle": "Local-first data layer: an agent or app reads and writes through SKData's core into an encrypted local store, with pluggable backends for where that store actually lives. No required cloud hop.",
+    "output": "skdata.architecture.html",
+    "quality_profile": "showcase"
+  },
+  "components": [
+    { "id": "agent", "type": "frontend", "label": "Agent / Application", "sublabel": "AI agent or app calling SKData", "pos": [40, 220], "size": [180, 70] },
+    { "id": "core", "type": "backend", "label": "SKData core", "sublabel": "local-first, schema-flexible data layer", "pos": [320, 220], "size": [180, 70] },
+    { "id": "store", "type": "database", "label": "Encrypted local store", "sublabel": "encrypted at rest, on local disk", "pos": [620, 110], "size": [180, 70] },
+    { "id": "backend", "type": "external", "label": "Pluggable backend", "sublabel": "user-selected storage backend", "pos": [620, 330], "size": [180, 70] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "Your hardware (zero cloud dependency)", "wraps": ["core", "store"] }
+  ],
+  "connections": [
+    { "id": "agent-to-core", "from": "agent", "to": "core", "label": "read / write calls", "variant": "default" },
+    { "id": "core-to-store", "from": "core", "to": "store", "label": "encrypted at rest", "variant": "security" },
+    { "id": "core-to-backend", "from": "core", "to": "backend", "label": "pluggable backend (optional)", "variant": "dashed" }
+  ],
+  "cards": [
+    { "dot": "emerald", "title": "Data sovereignty by design", "items": ["Local-first: your data never leaves your hardware", "Encrypted at rest: your keys, your disk, your rules", "Pluggable backends: the storage layer is swappable, never fixed to one vendor", "Schema-flexible: no imposed data model", "Zero cloud dependency: no required external hop"] }
+  ]
+}
